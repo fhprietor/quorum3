@@ -17,7 +17,7 @@ class CreateOptionsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->unsignedInteger('poll_id');
-            $table->integer('votes')->default(0);
+            $table->double('votes',10,4)->default(0);
             $table->timestamps();
 
             $table->foreign('poll_id')->references('id')->on('larapoll_polls');
