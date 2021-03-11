@@ -1,0 +1,24 @@
+{
+    "Login": "Conectarse",
+    "Register": "Registrarse",
+    "E-Mail Address": "Correo electrónico",
+    "Password": "Clave",
+    "Remember Me": "Recuérdeme",
+    "Forgot Your Password?": "Olvidó su clave?",
+    "Name": "Nombre",
+    "Confirm Password": "Confirmar clave",
+    "Reset Password": "Reiniciar clave",
+    "Send Password Reset Link": "Enviar enlace de reinicio de clave",
+    "Please confirm your password before continuing.": "Confirme su clave antes de seguir.",
+    "Verify Your Email Address": "Verifique su dirección de correo",
+    "A fresh verification link has been sent to your email address.": "Se ha enviado un enlace de verificación a su correo.",
+    "Before proceeding, please check your email for a verification link.": "Antes de seguir, verifique su buzón de correo para el enlace de verificación",
+    "If you did not receive the email": "Si no recibe el correo",
+    "click here to request another": "haga click acá para pedir otro enlace",
+    "Toggle navigation": "Cambiar navegación",
+    "Home": "Inicio",
+    "Moderator": "Moderador",
+    "Poll list": "Preguntas",
+    "These credentials do not match our records.": "Usuario y/o clave errados"
+
+}
