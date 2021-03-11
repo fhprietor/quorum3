@@ -40,10 +40,10 @@ trait PollWriterResults
             $options = collect($results)->map(function ($result) use ($total) {
                 return (object)[
                     'votes' => $result['votes'],
-                    'percent' => $total === 0 ? 0 : ($result['votes'] / $total) * 100,
+                    'percent' => $total === 0 ? 0 : round(($result['votes'] / $total) * 100,2),
                     'name' => $result['option']->name,
                 ];
-            });
+            })->sortByDesc('votes');
         }
         $question = $poll->question;
 

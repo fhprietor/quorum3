@@ -352,7 +352,7 @@
         },
         {
             "name": "fhprietor/larapoll",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "packages/Fhprietor/Larapoll",

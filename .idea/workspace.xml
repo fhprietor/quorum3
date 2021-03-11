@@ -146,7 +146,7 @@
       <updated>1615420402091</updated>
       <workItem from="1615420403274" duration="5784000" />
       <workItem from="1615426802637" duration="39000" />
-      <workItem from="1615426943383" duration="344000" />
+      <workItem from="1615426943383" duration="5558000" />
     </task>
     <servers />
   </component>
@@ -154,6 +154,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="454" y="624" key="NewPhpFileDialog" timestamp="1615433013376">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="454" y="624" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1615433013376" />
     <state x="1452" y="546" width="585" height="566" key="find.popup" timestamp="1615426236816">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
