@@ -16,11 +16,12 @@
                     </div>
 
                     <div class="align-content-md-center links">
-
+                        @if(Auth::user()->role == "MODERATOR")
                         <div>
                             <a class="btn btn-info btn-sm" href="{{ url('/admin_polls/admin/polls') }}">{{ __('Moderator') }}</a>
                         </div>
                         <br>
+                        @endif
                         <div>
                             <a class="btn btn-info btn-sm" href="{{ url('/admin_polls/polls/lists') }}">{{ __('Poll list') }}</a>
                         </div>
