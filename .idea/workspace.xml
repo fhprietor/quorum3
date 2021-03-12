@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbc47c3f-7468-495c-bac7-45efbd858bd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_23_044605_add_weight_to_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_23_044605_add_weight_to_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

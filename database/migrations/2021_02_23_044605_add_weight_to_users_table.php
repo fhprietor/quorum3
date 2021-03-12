@@ -14,7 +14,7 @@ class AddWeightToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedInteger('weight')->default(100);
+            $table->unsignedInteger('weight')->after('email')->default(100);
         });
     }
 
