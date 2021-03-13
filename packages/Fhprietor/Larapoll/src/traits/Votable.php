@@ -37,7 +37,7 @@ trait Votable
         if($this->isPollClosed()){
             return $this->votes;
         }
-        return Vote::where('option_id', $this->getKey())->sum('weight')/100; // count();
+        return Vote::where('option_id', $this->getKey())->sum('weight')/10000; // count();
     }
 
     /**

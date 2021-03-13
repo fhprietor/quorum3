@@ -13,7 +13,7 @@ trait PollWriterResults
      */
     public function drawResult(Poll $poll)
     {
-        $total = $poll->votes->sum('weight')/100;
+        $total = $poll->votes->sum('weight')/10000;
         $users = $poll->votes->unique('user_id')->count('user_id');
         $seats = $poll->seats;
         $quorum = $poll->quorum;
@@ -29,7 +29,7 @@ trait PollWriterResults
             $options = collect($results)->map(function ($result) use ($total,$quotient) {
                 return (object)[
                     'votes' => $result['votes'],
-                    'percent' => $total === 0 ? 0 : ($result['votes'] / $total) * 100,
+                    'percent' => $total === 0 ? 0 : ($result['votes'] / $total) * 10000,
                     'name' => $result['option']->name,
                     'seatsbyquotient'=> floor($result['votes'] / $quotient),
                     'residue' => $result['votes'] / $quotient - floor($result['votes'] / $quotient),

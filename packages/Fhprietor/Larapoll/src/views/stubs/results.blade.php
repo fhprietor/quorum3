@@ -33,13 +33,13 @@
 @else
     <h3>Encuesta: {{ $question }}</h3>
     <h4>Votantes: {{ $users }}</h4>
-    <h4>Total votos: {{ $total }}</h4>
+    <h4>Total participación (coeficientes): {{ $total }}</h4>
     @if($quorum>0)
       <h4>Abstenciones {{ $quorum-$total }}</h4>
     @endif
     @foreach($options as $option)
         <div class='result-option-id'>
-            <strong>{{ $option->name }}</strong><span class='pull-right'>{{$option->votes}} votos: {{ $option->percent }}%</span>
+            <strong>{{ $option->name }}</strong><span class='pull-right'>{{$option->votes}} votos ({{ $option->percent }}%)</span>
             <div class='progress'>
                 <div class='progress-bar progress-bar-striped active' role='progressbar' aria-valuenow='{{ $option->percent }}' aria-valuemin='0' aria-valuemax='100' style='width: {{ $option->percent }}%'>
                     <span class='sr-only'>{{ $option->percent }}% Completado</span>
