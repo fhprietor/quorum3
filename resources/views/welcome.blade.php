@@ -51,13 +51,12 @@
         .links > a {
             color: #636b6f;
             padding: 0 25px;
-            font-size: 13px;
+            font-size: 23px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
         }
-
         .m-b-md {
             margin-bottom: 30px;
         }
@@ -87,7 +86,9 @@
         <div class="title m-b-md">
             Quorum
         </div>
-
+        <div>
+            <h1>{{ config('app.sitename', 'default value here') }}</h1>
+        </div>
     </div>
 </div>
 </body>
