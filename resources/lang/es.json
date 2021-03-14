@@ -19,6 +19,6 @@
     "Home": "Inicio",
     "Moderator": "Opciones de Moderador (solo en versión demo)",
     "Poll list": "Entrar a Votaciones",
-    "These credentials do not match our records.": "Usuario y/o clave errados"
-
+    "These credentials do not match our records.": "Usuario y/o clave errados",
+    "This email is not allowed to register, contact the administrator." : "Este correo no tiene permitido registrarse, contacte al administrador."
 }

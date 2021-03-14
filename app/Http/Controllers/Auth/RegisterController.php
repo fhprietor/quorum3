@@ -50,18 +50,9 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        $user = DB::table('users')
-            ->where('email','pepito@gmail.com')
-            ->get();
-        if($user != null)
-            Validator::make($data, [
-                'name' => ['required', 'string', 'max:255'],
-                'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-                'password' => ['required', 'string', 'min:8', 'confirmed'],
-            ]);
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'checkPI'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
