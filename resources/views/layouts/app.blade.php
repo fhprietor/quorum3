@@ -40,11 +40,11 @@
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Conectarse</a>
+                            <a class="nav-link" href="{{ route('login') }}">CONECTARSE</a>
                         </li>
-                        @if (Route::has('register'))
+                        @if (Route::has('register') && config('app.register_enabled'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">Registrarse</a>
+                                <a class="nav-link" href="{{ route('register') }}">REGISTRARSE</a>
                             </li>
                         @endif
                     @else

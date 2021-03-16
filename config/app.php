@@ -17,6 +17,7 @@ return [
     'sitename' => env('SITE_NAME', ''),
     'restrictregisterlist' => (bool) env('RESTRICT_REGISTER_LIST',false),
     'mustverifyemail' => (bool) env('MUST_VERIFY_EMAIL',true),
+    'register_enabled' => (bool) env('REGISTER_ENABLED', true),
 
     /*
     |--------------------------------------------------------------------------

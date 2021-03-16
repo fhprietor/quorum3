@@ -72,8 +72,9 @@
                 <a href="{{ route('login') }}">{{ __('Login') }}</a>
 
 {{--                @if (Route::has('register') && config('larapoll_config.register_enabled'))--}}
+                @if (Route::has('register') && config('app.register_enabled'))
                     <a href="{{ route('register') }}">{{ __('Register') }}</a>
-{{--                @endif--}}
+                @endif
 
             @endauth
         </div>
