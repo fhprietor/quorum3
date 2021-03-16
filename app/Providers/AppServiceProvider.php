@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
             $users = DB::table('weights')
                 ->where('email','like', '%'. $data['email'].'%' )
                 ->get();
-            if($users->count() == 0)
+            if($users->count() == 0 && config('app.restrictregisterlist', false))
                 return false;
             return true;
         }, __('This email is not allowed to register, contact the administrator.'));

@@ -15,6 +15,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'sitename' => env('SITE_NAME', ''),
+    'restrictregisterlist' => (bool) env('RESTRICT_REGISTER_LIST',false),
 
     /*
     |--------------------------------------------------------------------------
