@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbc47c3f-7468-495c-bac7-45efbd858bd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,7 @@
       <workItem from="1615426943383" duration="8107000" />
       <workItem from="1615597314535" duration="1359000" />
       <workItem from="1615662037353" duration="15342000" />
-      <workItem from="1615849558539" duration="1261000" />
+      <workItem from="1615849558539" duration="4363000" />
     </task>
     <servers />
   </component>
@@ -200,5 +201,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1452" y="546" width="585" height="566" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1615696657643" />
+    <state x="276" y="403" width="672" height="678" key="search.everywhere.popup" timestamp="1615857357771">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="276" y="403" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1615857357771" />
   </component>
 </project>
