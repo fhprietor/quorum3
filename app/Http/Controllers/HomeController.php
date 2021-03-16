@@ -13,7 +13,10 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth','verified']);
+        if(config('app.mustverifyemail', true))
+            $this->middleware(['auth','verified']);
+        else
+            $this->middleware('auth');
     }
 
     /**
