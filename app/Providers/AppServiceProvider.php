@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
         Validator::extend('checkPI', function($attribute, $value, $parameters, $validator) {
             $data= $validator->getData();
             $users = DB::table('weights')
-                ->where('email', $data['email'] )
+                ->where('email','like', '%'. $data['email'].'%' )
                 ->get();
             if($users->count() == 0)
                 return false;
