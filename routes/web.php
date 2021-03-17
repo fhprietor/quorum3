@@ -19,3 +19,4 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/usersxyz', 'Auth\UserController@index')->name('users');
