@@ -29,7 +29,7 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>#</th>
+{{--                    <th>#</th>--}}
                     <th>Pregunta</th>
                     <th>Opciones</th>
                     <th>Votos</th>
@@ -44,7 +44,7 @@
                     @else
                         <tr class="alert alert-light">
                             @endif
-                            <th scope="row">{{ $poll->id }}</th>
+{{--                            <th scope="row">{{ $poll->id }}</th>--}}
                             <td>
                                 @if($poll->isRunning())
                                     <span class="alert-link">{{ $poll->question }}</span>
