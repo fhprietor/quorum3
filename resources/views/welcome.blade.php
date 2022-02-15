@@ -85,7 +85,7 @@
             <img src="logowcuttransparent.png" alt="" style="width:126px;height:130px;">
         </div>
         <div class="title m-b-md">
-            Quorum
+            Quorum en línea
         </div>
         <div>
             <h1>{{ config('app.sitename', 'default value here') }}</h1>
