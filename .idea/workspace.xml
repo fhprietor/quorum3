@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbc47c3f-7468-495c-bac7-45efbd858bd4" name="Default Changelist" comment="" />
+    <list default="true" id="cbc47c3f-7468-495c-bac7-45efbd858bd4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/traits/PollWriterResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/traits/PollWriterResults.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/stubs/results.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/stubs/results.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,8 +150,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pruebas/passport" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pruebas/quorum" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -182,6 +187,8 @@
       <workItem from="1616267210761" duration="1585000" />
       <workItem from="1616285635740" duration="6008000" />
       <workItem from="1616878385612" duration="1083000" />
+      <workItem from="1644974545795" duration="410000" />
+      <workItem from="1644975671525" duration="4041000" />
     </task>
     <servers />
   </component>
@@ -210,23 +217,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="409" y="503" key="FileChooserDialogImpl" timestamp="1616038795694">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="409" y="503" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1616038795694" />
-    <state x="454" y="624" key="NewPhpFileDialog" timestamp="1615946160584">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="454" y="624" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1615946160584" />
-    <state x="1452" y="546" width="585" height="566" key="find.popup" timestamp="1616584659068">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1452" y="546" width="585" height="566" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1616584659068" />
-    <state x="277" y="403" width="672" height="678" key="search.everywhere.popup" timestamp="1616288097677">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="277" y="403" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1616288097677" />
   </component>
 </project>
