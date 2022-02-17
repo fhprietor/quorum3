@@ -11,7 +11,9 @@
     </style>
 @endsection
 @section('content')
+
     <div class="container">
+
         <ol class="breadcrumb">
             <li><a href="{{ route('home') }}">Inicio</a></li>
             <li class="active">Preguntas</li>
@@ -74,7 +76,9 @@
             </table>
         @endif
         {{ $polls->links() }}
+
     </div>
+
 @endsection
 
 @section('js')

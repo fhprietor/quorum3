@@ -53,7 +53,9 @@
                     <img src="/logowcuttransparent.png" alt="" style="width:50px;height:60px;  href="{{ route('home') }}>
                 </a>
             </div>
+            @if(Auth::user()->role == "MODERATOR")
             <a href="{{ route('poll.create') }}" class="btn btn-success pull-right create-btn">Crear Pregunta</a>
+            @endif
         </div>
     </nav>
 

@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cbc47c3f-7468-495c-bac7-45efbd858bd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/dashboard/lists.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/dashboard/lists.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +189,7 @@
       <workItem from="1616878385612" duration="1083000" />
       <workItem from="1644974545795" duration="410000" />
       <workItem from="1644975671525" duration="4695000" />
-      <workItem from="1645007334629" duration="7891000" />
+      <workItem from="1645007334629" duration="9351000" />
     </task>
     <servers />
   </component>

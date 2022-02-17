@@ -12,6 +12,7 @@ Preguntas-Listado
 @endsection
 @section('content')
 <div class="container">
+    @if(Auth::user()->role == "MODERATOR")
     <ol class="breadcrumb">
         <li><a href="{{ route('home') }}">Inicio</a></li>
         <li class="active">Preguntas</li>
@@ -105,6 +106,7 @@ Preguntas-Listado
     <smal>No se han encontrado preguntas. Cree una <a href="{{ route('poll.create') }}">Ahora</a></smal>
     @endif
     {{ $polls->links() }}
+    @endif
 </div>
 @endsection
 
