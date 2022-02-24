@@ -29,11 +29,11 @@
                             <a class="btn btn-info btn-sm" href="{{ url('/users') }}">{{ __('Registered Users') }}</a>
                         </div>
                         <br>
-                        @else
+                        @endif
                         <div>
                             <a class="btn btn-info btn-sm" href="{{ url('/admin_polls/polls/lists') }}">{{ __('Poll list') }}</a>
                         </div>
-                        @endif
+
                     </div>
                 </div>
             </div>
