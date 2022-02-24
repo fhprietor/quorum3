@@ -20,9 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbc47c3f-7468-495c-bac7-45efbd858bd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/weights.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/dashboard/lists.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/dashboard/lists.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Fhprietor/Larapoll/src/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,12 +156,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pruebas/quorum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desarrollo\proyectos\quorum3\resources\views" />
+      <recent name="D:\Desarrollo\proyectos\quorum3\packages\Fhprietor\Larapoll\src\Http\Controllers" />
       <recent name="D:\Desarrollo\pruebas\quorum-2.5.2\resources\lang\es" />
     </key>
   </component>
@@ -189,7 +197,8 @@
       <workItem from="1616878385612" duration="1083000" />
       <workItem from="1644974545795" duration="410000" />
       <workItem from="1644975671525" duration="4695000" />
-      <workItem from="1645007334629" duration="9351000" />
+      <workItem from="1645007334629" duration="13593000" />
+      <workItem from="1645373552712" duration="13030000" />
     </task>
     <servers />
   </component>

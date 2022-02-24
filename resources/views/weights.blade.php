@@ -1,6 +1,6 @@
 @extends('larapoll::layouts.list')
 @section('title')
-    Usuarios registrados
+    Pre-Registro
 @endsection
 @section('style')
     <style>
@@ -13,25 +13,25 @@
 @section('content')
     <div class="container">
         @if(Auth::user()->role == "MODERATOR")
-            <p>Usuarios registrados: {{ $users->count() }}</p>
+            <p>Usuarios pre-registrados: {{ $weights->count() }}</p>
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>Usuario</th>
                     <th>Correo</th>
-                    <th>Coeficiente</th>
-                    <th>Creado</th>
+                    <th>Nombre</th>
+                    <th>Registrado</th>
                     <th>Confirmado</th>
                 </tr>
                 </thead>
                 <tbody>
-                    @foreach($users as $user)
+                    @foreach($weights as $weight)
                         <tr>
-                            <td>{{$user->name}}</td>
-                            <td>{{$user->email}}</td>
-                            <td>{{$user->weight/1000}}</td>
-                            <td>{{$user->created_at}}</td>
-                            <td>{{$user->email_verified_at}}</td>
+                            <td>{{$weight->email}}</td>
+                            @if ($weight->user)
+                            <td>{{$weight->user->name}}</td>
+                            <td>{{$weight->user->created_at}}</td>
+                            <td>{{$weight->user->email_verified_at}}</td>
+                            @endif
                         </tr>
                     @endforeach
                 </tbody>

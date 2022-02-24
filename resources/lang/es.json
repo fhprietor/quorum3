@@ -1,4 +1,6 @@
 {
+    "Registered Users": "Usuarios registrados",
+    "Pre-Registered Users": "Pre-Registro",
     "Login": "Conectarse",
     "Register": "Registrarse",
     "E-Mail Address": "Correo electrónico",
@@ -17,7 +19,7 @@
     "click here to request another": "haga click acá para pedir otro enlace",
     "Toggle navigation": "Cambiar navegación",
     "Home": "Inicio",
-    "Moderator": "Opciones de Moderador",
+    "Moderator": "Gestión de preguntas",
     "Poll list": "Entrar a Votaciones",
     "These credentials do not match our records.": "Usuario y/o clave errados",
     "This email is not allowed to register, contact the administrator." : "Este correo no tiene permitido registrarse, contacte al administrador.",
