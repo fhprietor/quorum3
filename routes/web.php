@@ -20,4 +20,8 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/users', 'Auth\UserController@index')->name('users');
-Route::get('/weights', 'Auth\UserController@weights')->name('weights');
+Route::get('/weights', 'WeightController@index')->name('weights.index');
+Route::get('/weights/create', 'WeightController@create')->name('weights/create');
+Route::post('/weights', 'WeightController@store')->name('weights.store');
+
+

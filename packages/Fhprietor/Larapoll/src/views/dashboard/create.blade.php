@@ -52,7 +52,7 @@ Preguntas-Crear
             {{ session('danger') }}
         </div>
         @endif
-        <form method="POST" action=" {{ route('poll.store') }}">
+        <form method="POST" action=" {{ route('weights') }}">
             {{ csrf_field() }}
             <!-- Question Input -->
             <div class="form-group">

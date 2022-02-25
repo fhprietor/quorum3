@@ -18,12 +18,4 @@ class UserController extends Controller
             ->get();
         return view('users', ['users' =>$users]);
     }
-    public function weights()
-    {
-        $weights = Weight::with('user')
-            ->orderBy('email','ASC')
-            ->get();
-        return view('weights',['weights' => $weights]);
-    }
-
 }

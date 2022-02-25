@@ -13,6 +13,9 @@
 @section('content')
     <div class="container">
         @if(Auth::user()->role == "MODERATOR")
+            <br>
+            <a href="{{ route('weights/create') }}" class="btn btn-success pull-right create-btn">Crear Pre-registro</a>
+            <br>
             <p>Usuarios pre-registrados: {{ $weights->count() }}</p>
             <table class="table table-bordered">
                 <thead>
