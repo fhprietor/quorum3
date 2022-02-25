@@ -27,8 +27,14 @@
                     @foreach($weights as $weight)
                         <tr>
                             <td>{{$weight->email}}</td>
+                            @if ($weight->name)
+                                <td>{{$weight->name}}</td>
+                            @else
+                                @if ($weight->user)
+                                    <td>{{$weight->user->name}}</td>
+                                @endif
+                            @endif
                             @if ($weight->user)
-                            <td>{{$weight->user->name}}</td>
                             <td>{{$weight->user->created_at}}</td>
                             <td>{{$weight->user->email_verified_at}}</td>
                             @endif
