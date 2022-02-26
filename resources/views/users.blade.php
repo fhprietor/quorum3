@@ -13,7 +13,9 @@
 @section('content')
     <div class="container">
         @if(Auth::user()->role == "MODERATOR")
+            <br>
             <p>Registrados: {{ $count }}</p>
+            {{ $users->render() }}
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -46,7 +48,6 @@
                     @endforeach
                 </tbody>
             </table>
-            {{ $users->render() }}
         @endif
     </div>
 @endsection

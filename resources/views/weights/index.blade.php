@@ -17,6 +17,7 @@
             <a href="{{ route('weights/create') }}" class="btn btn-success pull-right create-btn">Crear Pre-registro</a>
             <br>
             <p>Pre-registros: {{ $count }}</p>
+            {{ $weights->render() }}
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -60,7 +61,6 @@
                     @endforeach
                 </tbody>
             </table>
-            {{ $weights->render() }}
         @endif
     </div>
 @endsection
