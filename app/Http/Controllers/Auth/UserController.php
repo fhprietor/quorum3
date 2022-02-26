@@ -15,7 +15,7 @@ class UserController extends Controller
         $count = User::where('role','VOTER')->count();
         $users = User::where('role','VOTER')
             ->orderBy('email','ASC')
-            ->paginate(3);
+            ->paginate(15);
         return view('users', ['users' =>$users, 'count' => $count]);
     }
 
