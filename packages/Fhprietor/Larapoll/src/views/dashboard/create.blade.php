@@ -57,7 +57,7 @@ Preguntas-Crear
             <!-- Question Input -->
             <div class="form-group">
                 <label for="question">Pregunta:</label>
-                <textarea id="question" name="question" cols="30" rows="2" class="form-control" placeholder="Ej: Quien ha sido el mejor futbolista de Colombia?">{{ old('question') }}</textarea>
+                <textarea id="question" name="question" cols="30" rows="2" maxlength="254" class="form-control" placeholder="Ej: Quien ha sido el mejor futbolista de Colombia?">{{ old('question') }}</textarea>
             </div>
                 <div class="form-group">
                     <label>Número de escaños a repartir (Solo para votaciones de cociente. Dejar en CERO para votaciones normales</label><br>

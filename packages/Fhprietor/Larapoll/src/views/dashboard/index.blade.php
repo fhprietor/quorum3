@@ -109,7 +109,7 @@ Preguntas-Listado
                 </td>
                 <td>
                     <a class="btn btn-info btn-sm" href="{{ route('poll.votar', $poll->id) }}">
-                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
                     </a>
                 </td>
             </tr>

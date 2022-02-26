@@ -31,7 +31,7 @@
         </div>
     @endforeach
 @else
-    <h3>Encuesta: {{ $question }}</h3>
+    <h3>{{ $question }}</h3>
     <h4>Votantes: {{ $users }}</h4>
     <h4>Total participación: {{ $total }}</h4>
     @if($quorum>0)

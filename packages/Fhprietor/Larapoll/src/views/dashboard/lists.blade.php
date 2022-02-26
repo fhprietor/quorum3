@@ -36,7 +36,7 @@
                     <th>Opciones</th>
                     <th>Votos</th>
                     <th>Estado</th>
-                    <th>Voto</th>
+                    <th>Votar</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -67,7 +67,7 @@
                             </td>
                             <td>
                                 <a class="btn btn-info btn-sm" href="{{ route('poll.votar', $poll->id) }}">
-                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    <i class="fa fa-hand-o-down" aria-hidden="true"></i>
                                 </a>
                             </td>
                         </tr>

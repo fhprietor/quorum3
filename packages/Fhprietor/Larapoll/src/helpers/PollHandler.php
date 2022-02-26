@@ -69,7 +69,7 @@ class PollHandler
 
 
         $poll->update([
-            'question' => $data['question'],
+            'question' => substr($data['question'],0,254),
             'seats' => $data['seats'],
             'quorum' => $data['quorum'],
             'visible' => $data['visible']
