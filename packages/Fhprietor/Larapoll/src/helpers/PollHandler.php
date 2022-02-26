@@ -29,7 +29,8 @@ class PollHandler
             'question' => $request['question'],
             'canVisitorsVote' => isset($request['canVisitorsVote']),
             'seats' => $request['seats'],
-            'quorum' => $request['quorum']
+            'quorum' => $request['quorum'],
+            'visible' => $request['visible'],
         ]);
 
         $poll->addOptions($request['options']);
@@ -51,7 +52,7 @@ class PollHandler
      */
     public static function modify(Poll $poll, $data)
     {
-        if (array_key_exists('count_check', $data)) {
+         if (array_key_exists('count_check', $data)) {
             if ($data['count_check'] < $poll->options()->count()) {
                 $poll->canSelect($data['count_check']);
             }
@@ -70,7 +71,8 @@ class PollHandler
         $poll->update([
             'question' => $data['question'],
             'seats' => $data['seats'],
-            'quorum' => $data['quorum']
+            'quorum' => $data['quorum'],
+            'visible' => $data['visible']
         ]);
 
         if (array_key_exists('close', $data)) {

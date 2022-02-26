@@ -52,7 +52,7 @@ Preguntas-Crear
             {{ session('danger') }}
         </div>
         @endif
-        <form method="POST" action=" {{ route('weights') }}">
+        <form method="POST" action=" {{ route('poll.store') }}">
             {{ csrf_field() }}
             <!-- Question Input -->
             <div class="form-group">
@@ -101,6 +101,11 @@ Preguntas-Crear
                         <input type="datetime-local" id="ends_at" name="ends_at" class="form-control" value="{{ old('ends_at') }}" />
                     </div>
                 </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="number" id="visible" name="visible" value="0" {{ old('visible') }}> Visible en listado de preguntas (0: No 1: Si)
+                </label>
             </div>
             <div class="form-group">
                 <label>

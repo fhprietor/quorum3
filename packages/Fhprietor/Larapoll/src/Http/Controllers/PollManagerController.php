@@ -131,9 +131,11 @@ class PollManagerController extends Controller
      */
     public function lists()
     {
-        $polls = Poll::withCount('options', 'votes')->latest()->paginate(
+        $polls = Poll::where('visible',true)
+            ->withCount('options', 'votes')->latest()->paginate(
             config('larapoll_config.pagination')
         );
+
         return view('larapoll::dashboard.lists', compact('polls'));
     }
     /**
