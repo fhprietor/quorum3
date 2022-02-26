@@ -19,9 +19,11 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/users', 'Auth\UserController@index')->name('users');
+Route::get('/users', 'Auth\UserController@index')->name('users.index');
+Route::delete('/users/{user}', 'Auth\UserController@destroy')->name('users.destroy');
 Route::get('/weights', 'WeightController@index')->name('weights.index');
 Route::get('/weights/create', 'WeightController@create')->name('weights/create');
 Route::post('/weights', 'WeightController@store')->name('weights.store');
+Route::delete('/weights/{weight}', 'WeightController@destroy')->name('weights.destroy');
 
 

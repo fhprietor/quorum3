@@ -16,7 +16,7 @@
             <br>
             <a href="{{ route('weights/create') }}" class="btn btn-success pull-right create-btn">Crear Pre-registro</a>
             <br>
-            <p>Usuarios pre-registrados: {{ $weights->count() }}</p>
+            <p>Pre-registros: {{ $count }}</p>
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -24,6 +24,7 @@
                     <th>Nombre</th>
                     <th>Registrado</th>
                     <th>Confirmado</th>
+                    <th>Eliminar</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -35,16 +36,31 @@
                             @else
                                 @if ($weight->user)
                                     <td>{{$weight->user->name}}</td>
+                                @else
+                                    <td></td>
                                 @endif
                             @endif
                             @if ($weight->user)
-                            <td>{{$weight->user->created_at}}</td>
-                            <td>{{$weight->user->email_verified_at}}</td>
+                                <td>{{$weight->user->created_at}}</td>
+                                <td>{{$weight->user->email_verified_at}}</td>
+                            @else
+                                <td></td>
+                                <td></td>
                             @endif
+                            <td>
+                                <form class="delete" action="{{ route('weights.destroy', $weight) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
+            {{ $weights->render() }}
         @endif
     </div>
 @endsection

@@ -13,7 +13,7 @@
 @section('content')
     <div class="container">
         @if(Auth::user()->role == "MODERATOR")
-            <p>Usuarios registrados: {{ $users->count() }}</p>
+            <p>Registrados: {{ $count }}</p>
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -22,6 +22,7 @@
                     <th>Coeficiente</th>
                     <th>Creado</th>
                     <th>Confirmado</th>
+                    <th>Eliminar</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -32,10 +33,20 @@
                             <td>{{$user->weight/1000}}</td>
                             <td>{{$user->created_at}}</td>
                             <td>{{$user->email_verified_at}}</td>
+                            <td>
+                                <form class="delete" action="{{ route('users.destroy', $user) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
+            {{ $users->render() }}
         @endif
     </div>
 @endsection

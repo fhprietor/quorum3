@@ -13,11 +13,11 @@ class WeightController extends Controller
      */
     public function index()
     {
-
+        $count = Weight::all()->count();
         $weights = Weight::with('user')
             ->orderBy('email','ASC')
-            ->get();
-        return view('weights.index',['weights' => $weights]);
+            ->paginate(15);
+        return view('weights.index',['weights' => $weights, 'count' => $count]);
     }
 
     /**
@@ -105,6 +105,9 @@ class WeightController extends Controller
      */
     public function destroy(Weight $weight)
     {
-        //
+        $weight->delete();
+        return redirect(route('weights.index'))
+            ->with('success', 'Preregistro borrado');
     }
+
 }
