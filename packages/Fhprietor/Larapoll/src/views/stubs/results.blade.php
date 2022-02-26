@@ -15,7 +15,7 @@
     <h5>Metodo: Por cociente electoral</h5>
     <h6>Total participacion: {{ $total }}</h6>
     <h6>Abstenciones {{ $quorum-$total }}</h6>
-    <h6>Escaños a repartir: {{$seats}} </h6>
+    <h6>Miembros a elegir: {{$seats}} </h6>
     <h6>Cociente electoral: {{$quotient}}</h6>
     @foreach($options as $option)
         <div class='result-option-id'>
@@ -30,6 +30,9 @@
             </div>
         </div>
     @endforeach
+    <div>
+        <p>* En caso de empate de los residuos decidirá la suerte. Los votos en blanco solo se computarán para determinar el cuociente electoral.</p>
+    </div>
 @else
     <h3>{{ $question }}</h3>
     <h4>Votantes: {{ $users }}</h4>
