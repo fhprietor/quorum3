@@ -40,6 +40,7 @@ Preguntas-Listado
                 <th>Eliminar</th>
                 <th>Bloquear / Desbloquear</th>
                 <th>Ver resultados</th>
+                <th>Mostrar pregunta</th>
             </tr>
         </thead>
         <tbody>
@@ -104,6 +105,11 @@ Preguntas-Listado
                 <td>
                     <a class="btn btn-info btn-sm" href="{{ route('poll.view', $poll->id) }}">
                         <i class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-info btn-sm" href="{{ route('poll.votar', $poll->id) }}">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     </a>
                 </td>
             </tr>
