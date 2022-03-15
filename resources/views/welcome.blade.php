@@ -45,7 +45,7 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 56px;
         }
 
         .links > a {
@@ -82,13 +82,13 @@
 
     <div class="content">
         <div>
-            <img src="logowcuttransparent.png" alt="" style="width:501px;height:130px;">
+            <img src="logowcuttransparent.png" alt="" style="width:350px;height:91px;">
         </div>
         <div class="title m-b-md">
             Quorum en línea
         </div>
         <div>
-            <h1>{{ config('app.sitename', 'default value here') }}</h1>
+            <h2>{{ config('app.sitename', 'default value here') }}</h2>
         </div>
     </div>
 </div>
