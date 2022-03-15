@@ -82,7 +82,7 @@
 
     <div class="content">
         <div>
-            <img src="logowcuttransparent.png" alt="" style="width:126px;height:130px;">
+            <img src="logowcuttransparent.png" alt="" style="width:501px;height:130px;">
         </div>
         <div class="title m-b-md">
             Quorum en línea
