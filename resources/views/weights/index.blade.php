@@ -23,6 +23,7 @@
                 <tr>
                     <th>Correo</th>
                     <th>Nombre</th>
+                    <th>Coef</th>
                     <th>Registrado</th>
                     <th>Confirmado</th>
                     <th>Editar</th>
@@ -42,6 +43,7 @@
                                     <td></td>
                                 @endif
                             @endif
+                            <td>{{ $weight->weight }}</td>
                             @if ($weight->user)
                                 <td>{{$weight->user->created_at}}</td>
                                 <td>{{$weight->user->email_verified_at}}</td>

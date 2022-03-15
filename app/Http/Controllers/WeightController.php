@@ -40,6 +40,7 @@ class WeightController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'checkPI'],
+            'weight' => 'numeric|min:0'
         ]);
     }
 
@@ -54,11 +55,13 @@ class WeightController extends Controller
         $validatedData = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:weights'],
+            'weight' => 'numeric|min:0'
         ]);
 
         Weight::create([
             'name' => $request['name'],
-            'email' => $request['email']]);
+            'email' => $request['email'],
+            'weight' => $request['weight']]);
         return redirect(route('weights.index'))
             ->with('success', 'Preinscripción agregada');
     }
@@ -90,11 +93,21 @@ class WeightController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Weight  $weight
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function update(Request $request, Weight $weight)
     {
-        //
+       $validatedData = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => 'required|string|email|max:255|unique:weights,email,'. $weight->id,
+           'weight' => 'numeric|min:0'
+        ]);
+        $weight->name = $request['name'];
+        $weight->email = $request['email'];
+        $weight->weight = $request['weight'];
+        $weight->save();
+        return redirect(route('weights.index'))
+            ->with('success', 'Preinscripción actualizada');
     }
 
     /**

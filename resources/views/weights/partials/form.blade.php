@@ -25,3 +25,16 @@
         @enderror
     </div>
 </div>
+<div class="form-group row">
+    <label for="weight" class="col-md-4 col-form-label text-md-right">{{ __('Coefficient') }}</label>
+
+    <div class="col-md-6">
+        <input id="weight" type="text" class="form-control @error('weight') is-invalid @enderror" name="weight" value="{{ old('weight') }}" required autocomplete="weight">
+
+        @error('weight')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>

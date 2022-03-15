@@ -11,7 +11,7 @@ class Weight extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'email'];
+    protected $fillable = ['name', 'email','weight'];
 
     public function user()
     {
