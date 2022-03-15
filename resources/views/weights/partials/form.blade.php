@@ -2,7 +2,6 @@
     <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
     <div class="col-md-6">
-        {{$weight->email}}
         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre completo">
 
         @error('name')
