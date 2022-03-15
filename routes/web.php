@@ -25,5 +25,7 @@ Route::get('/weights', 'WeightController@index')->name('weights.index');
 Route::get('/weights/create', 'WeightController@create')->name('weights/create');
 Route::post('/weights', 'WeightController@store')->name('weights.store');
 Route::delete('/weights/{weight}', 'WeightController@destroy')->name('weights.destroy');
+Route::get('/weights/{weight}', 'WeightController@edit')->name('weights.edit');
+Route::put('/weights/{weight}', 'WeightController@update')->name('weights.update');
 
 

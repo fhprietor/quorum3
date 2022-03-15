@@ -1,6 +1,6 @@
 @extends('larapoll::layouts.list')
 @section('title')
-    PreRegistro-Crear
+    PreRegistro-Editar
 @endsection
 @section('style')
     <style>
@@ -37,17 +37,17 @@
         <ol class="breadcrumb">
             <li><a href="{{ route('home') }}">Inicio</a></li>
             <li><a href="{{ route('weights.index') }}">Pre-Registro</a></li>
-            <li class="active">Crear Pre-Registro</li>
+            <li class="active">Editar Pre-Registro</li>
         </ol>
         <div class="well col-md-8 col-md-offset-2">
-            <form method="POST" action=" {{ route('weights.store') }}">
+            <form method="POST" action=" {{ route('weights.update', $weight->id) }}">
                 @csrf
                 @include('weights.partials.form')
 
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         <button type="submit" class="btn btn-primary">
-                            {{ __('Crear') }}
+                            {{ __('Actualizar') }}
                         </button>
                     </div>
                 </div>

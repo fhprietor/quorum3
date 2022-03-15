@@ -25,6 +25,7 @@
                     <th>Nombre</th>
                     <th>Registrado</th>
                     <th>Confirmado</th>
+                    <th>Editar</th>
                     <th>Eliminar</th>
                 </tr>
                 </thead>
@@ -48,6 +49,11 @@
                                 <td></td>
                                 <td></td>
                             @endif
+                            <td>
+                                <a class="btn btn-info btn-sm" href="{{ route('weights.edit', $weight) }}">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </a>
+                            </td>
                             <td>
                                 <form class="delete" action="{{ route('weights.destroy', $weight) }}" method="POST">
                                     {{ csrf_field() }}

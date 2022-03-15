@@ -78,11 +78,11 @@ class WeightController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Weight  $weight
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit(Weight $weight)
     {
-        //
+        return view('weights.edit',compact('weight'));
     }
 
     /**
