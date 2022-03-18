@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\UserController;
+
 $prefix = config('larapoll_config.prefix');
 Route::group(['namespace' => 'Inani\Larapoll\Http\Controllers', 'prefix' => $prefix, 'middleware' => 'web'], function(){
 
@@ -24,6 +26,7 @@ Route::group(['namespace' => 'Inani\Larapoll\Http\Controllers', 'prefix' => $pre
         Route::get('/vote/vote/{poll}', ['uses' => 'PollManagerController@vote', 'as' => 'poll.votar']);
         Route::get('/vote/view/{poll}', ['uses' => 'PollManagerController@view', 'as' => 'poll.view']);
         Route::get('/polls/lists', ['uses' => 'PollManagerController@lists', 'as' => 'poll.lists']);
+
     });
 
 

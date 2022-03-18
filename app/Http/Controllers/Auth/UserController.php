@@ -12,7 +12,23 @@ class UserController extends Controller
 {
     public function index()
     {
-        $users = User::all();
-        return view('users', ['users' =>$users]);
+        $count = User::where('role','VOTER')->count();
+        $users = User::where('role','VOTER')
+            ->orderBy('email','ASC')
+            ->paginate(15);
+        return view('users', ['users' =>$users, 'count' => $count]);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\User  $user
+     *
+     */
+    public function destroy(User $user)
+    {
+        $user->delete();
+        return redirect(route('users.index'))
+            ->with('success', 'Registro borrado');
     }
 }

@@ -49,7 +49,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ route('home') }}">
-                <img src="/logowcuttransparent.png" alt="" style="width:50px;height:60px;  href="{{ route('home') }}>
+                <img src="/logowcuttransparent.png" alt="" style="width:231px;height:60px;  href="{{ route('home') }}>
             </a>
         </div>
     </div>

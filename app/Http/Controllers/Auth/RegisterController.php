@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\Weight;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -65,8 +66,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $weight = Weight::where('email',$data['email'])->first();
+        if ($weight->name)
+            $name = $weight->name;
+        else
+            $name = $data['name'];
         return User::create([
-            'name' => $data['name'],
+            'name' => $name,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

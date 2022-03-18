@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Quorum</title>
+    <title>QuorumEnLinea</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 56px;
         }
 
         .links > a {
@@ -82,13 +82,13 @@
 
     <div class="content">
         <div>
-            <img src="logowcuttransparent.png" alt="" style="width:126px;height:130px;">
+            <img src="logowcuttransparent.png" alt="" style="width:350px;height:91px;">
         </div>
         <div class="title m-b-md">
-            Quorum
+            Quorum en línea
         </div>
         <div>
-            <h1>{{ config('app.sitename', 'default value here') }}</h1>
+            <h2>{{ config('app.sitename', 'default value here') }}</h2>
         </div>
     </div>
 </div>
