@@ -12,6 +12,7 @@ Preguntas-Listado
 @endsection
 @section('content')
 <div class="container">
+    @if(Auth::user()->role == "MODERATOR")
     <ol class="breadcrumb">
         <li><a href="{{ route('home') }}">Inicio</a></li>
         <li class="active">Preguntas</li>
@@ -32,12 +33,14 @@ Preguntas-Listado
                 <th>Visitantes permitidos</th>
                 <th>Votos</th>
                 <th>Estado</th>
+                <th>Visible</th>
                 <th>Editar</th>
                 <th>Agregar Opciones</th>
                 <th>Quitar Opciones</th>
                 <th>Eliminar</th>
                 <th>Bloquear / Desbloquear</th>
                 <th>Ver resultados</th>
+                <th>Mostrar pregunta</th>
             </tr>
         </thead>
         <tbody>
@@ -55,6 +58,13 @@ Preguntas-Listado
                     <span class="label label-info">Pronto</span>
                     @elseif($poll->isRunning())
                     <span class="label label-success">Iniciada</span>
+                    @endif
+                </td>
+                <td>
+                    @if($poll->visible)
+                        <span class="label label-success">Si</span>
+                    @else
+                        <span class="label label-danger">No</span>
                     @endif
                 </td>
                 <td>
@@ -97,6 +107,11 @@ Preguntas-Listado
                         <i class="fa fa-eye" aria-hidden="true"></i>
                     </a>
                 </td>
+                <td>
+                    <a class="btn btn-info btn-sm" href="{{ route('poll.votar', $poll->id) }}">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </a>
+                </td>
             </tr>
             @endforeach
         </tbody>
@@ -105,6 +120,7 @@ Preguntas-Listado
     <smal>No se han encontrado preguntas. Cree una <a href="{{ route('poll.create') }}">Ahora</a></smal>
     @endif
     {{ $polls->links() }}
+    @endif
 </div>
 @endsection
 

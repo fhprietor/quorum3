@@ -21,7 +21,9 @@
             @endforeach
         </ul>
     </div>
-    <div class="panel-footer">
-        <input type="submit" class="btn btn-primary btn-sm" value="Votar" />
-    </div>
+    @if(Auth::user()->role == "VOTER")
+        <div class="panel-footer">
+            <input type="submit" class="btn btn-primary btn-sm" value="Votar" />
+        </div>
+    @endif
 </form>

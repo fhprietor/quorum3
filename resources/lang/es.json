@@ -1,4 +1,8 @@
 {
+    "Coefficient": "Coeficiente",
+    "The email has already been taken.":  "Ese correo ya existe.",
+    "Registered Users": "Usuarios registrados",
+    "Pre-Registered Users": "Pre-Registro",
     "Login": "Conectarse",
     "Register": "Registrarse",
     "E-Mail Address": "Correo electrónico",
@@ -17,8 +21,18 @@
     "click here to request another": "haga click acá para pedir otro enlace",
     "Toggle navigation": "Cambiar navegación",
     "Home": "Inicio",
-    "Moderator": "Opciones de Moderador (solo en versión demo)",
+    "Moderator": "Gestión de preguntas",
     "Poll list": "Entrar a Votaciones",
     "These credentials do not match our records.": "Usuario y/o clave errados",
-    "This email is not allowed to register, contact the administrator." : "Este correo no tiene permitido registrarse, contacte al administrador."
+    "This email is not allowed to register, contact the administrator." : "Este correo no tiene permitido registrarse, contacte al administrador.",
+    "Hello!": "Hola!",
+    "Reset Password Notification" : "Solicitud de enlace de recuperación",
+    "You are receiving this email because we received a password reset request for your account." : "Ha recibido este correo porque hemos recibido una solicitud de recuperacion de clave de su cuenta.",
+    "This password reset link will expire in :count minutes." : "Este enlace expirará en :count minutos.",
+    "If you did not request a password reset, no further action is required." : "Si no ha solicitado esta recuperación de clave, no es necesario que haga nada",
+    "Regards" : "Cordialmente",
+    "If you’re having trouble clicking the \":actionText\" button, copy and paste the URL below\n" : "Si tiene inconvenientes al hacer click en el botón \":actionText\", copie y pegue el siguiente enlace\n",
+    "Verify Email Address" : "Verificar dirección de correo",
+    "Please click the button below to verify your email address." : "Por favor haga click en el siguiente botón para verificar su dirección de correo.",
+    "If you did not create an account, no further action is required." : "Si no ha creado una cuenta, no se requiere ninguna acción."
 }

@@ -78,6 +78,10 @@ Preguntas-Editar
                 <label>Quorum presente en el momento de la encuesta</label><br>
                 <input type="number" id="quorum" name="quorum" size="6" value="{{ $poll->quorum }}" >
             </div>
+            <div class="form-group">
+                <input type="number" id="visible" name="visible" size="6" value="{{ $poll->visible }}" > <label> Visible en lista de preguntas (0:No 1:Si)</label>
+            </div>
+
             <div class="form-group clearfix">
                 <label>Opciones</label>
                 <div class="row">

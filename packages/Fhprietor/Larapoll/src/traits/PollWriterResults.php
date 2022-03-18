@@ -13,7 +13,7 @@ trait PollWriterResults
      */
     public function drawResult(Poll $poll)
     {
-        $total = $poll->votes->sum('weight')/10000;
+        $total = $poll->votes->sum('weight')/100;
         $users = $poll->votes->unique('user_id')->count('user_id');
         $seats = $poll->seats;
         $quorum = $poll->quorum;
@@ -28,19 +28,19 @@ trait PollWriterResults
 
             $options = collect($results)->map(function ($result) use ($total,$quotient) {
                 return (object)[
-                    'votes' => $result['votes'],
-                    'percent' => $total === 0 ? 0 : ($result['votes'] / $total) * 10000,
+                    'votes' => $result['votes']*100,
+                    'percent' => $total === 0 ? 0 : ($result['votes'] / $total) * 100,
                     'name' => $result['option']->name,
-                    'seatsbyquotient'=> floor($result['votes'] / $quotient),
-                    'residue' => $result['votes'] / $quotient - floor($result['votes'] / $quotient),
+                    'seatsbyquotient'=> floor($result['votes'] / $quotient * 100),
+                    'residue' => $result['votes'] / $quotient * 100 - floor($result['votes'] / $quotient * 100),
                 ];
             });
         }
         else {
             $options = collect($results)->map(function ($result) use ($total) {
                 return (object)[
-                    'votes' => $result['votes'],
-                    'percent' => $total === 0 ? 0 : round(($result['votes'] / $total) * 100,2),
+                    'votes' => $result['votes'] * 100,
+                    'percent' => $total === 0 ? 0 : round(($result['votes'] / $total) * 10000,2),
                     'name' => $result['option']->name,
                 ];
             })->sortByDesc('votes');

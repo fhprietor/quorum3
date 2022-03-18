@@ -12,7 +12,7 @@ class Poll extends Model
 {
     use PollCreator, PollAccessor, PollManipulator, PollQueries;
 
-    protected $fillable = ['question', 'canVisitorsVote', 'canVoterSeeResult', 'seats', 'quorum'];
+    protected $fillable = ['question', 'canVisitorsVote', 'canVoterSeeResult', 'seats', 'quorum', 'visible'];
 
     protected $table = 'larapoll_polls';
 
