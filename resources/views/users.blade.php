@@ -32,7 +32,7 @@
                         <tr>
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
-                            <td>{{$user->weight/1000}}</td>
+                            <td>{{$user->weight/10000}}</td>
                             <td>{{$user->created_at}}</td>
                             <td>{{$user->email_verified_at}}</td>
                             <td>

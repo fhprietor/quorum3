@@ -43,7 +43,7 @@
                                     <td></td>
                                 @endif
                             @endif
-                            <td>{{ $weight->weight }}</td>
+                            <td>{{ $weight->weight/10000 }}</td>
                             @if ($weight->user)
                                 <td>{{$weight->user->created_at}}</td>
                                 <td>{{$weight->user->email_verified_at}}</td>
