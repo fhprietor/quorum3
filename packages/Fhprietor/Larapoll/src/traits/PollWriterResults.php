@@ -13,7 +13,7 @@ trait PollWriterResults
      */
     public function drawResult(Poll $poll)
     {
-        $total = $poll->votes->sum('weight')/10000;
+        $total = $poll->votes->sum('weight')/1000;
         $users = $poll->votes->unique('user_id')->count('user_id');
         $seats = $poll->seats;
         $quorum = $poll->quorum;
