@@ -28,11 +28,11 @@ trait PollWriterResults
 
             $options = collect($results)->map(function ($result) use ($total,$quotient) {
                 return (object)[
-                    'votes' => $result['votes'],
-                    'percent' => $total === 0 ? 0 : ($result['votes'] / $total) * 100,
+                    'votes' => $result['votes']/10000,
+                    'percent' => $total === 0 ? 0 : ($result['votes']/10000 / $total) * 100,
                     'name' => $result['option']->name,
-                    'seatsbyquotient'=> floor($result['votes'] / $quotient ),
-                    'residue' => $result['votes'] / $quotient - floor($result['votes'] / $quotient),
+                    'seatsbyquotient'=> floor($result['votes']/10000 / $quotient ),
+                    'residue' => $result['votes']/10000 / $quotient - floor($result['votes']/10000 / $quotient),
                 ];
             });
         }
