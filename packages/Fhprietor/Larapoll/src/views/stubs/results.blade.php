@@ -35,7 +35,7 @@
     </div>
 @else
     <h3>{{ $question }}</h3>
-    <h4>Votantes: {{ $users }}</h4>
+    <h4>Votantes nominales: {{ $users }}</h4>
     <h4>Total participación: {{ $total }}</h4>
     @if($quorum>0)
       <h4>Porcentaje participación: {{ round($total / $quorum,4) * 100 }}%</h4>
@@ -43,7 +43,7 @@
     @endif
     @foreach($options as $option)
         <div class='result-option-id'>
-            <strong>{{ $option->name }}</strong><span class='pull-right'>{{$option->votes}} votos ({{ $option->percent }}%)</span>
+            <strong>{{ $option->name }}</strong><span class='pull-right'>{{$option->votes}} ({{ $option->percent }}%)</span>
             <div class='progress'>
                 <div class='progress-bar progress-bar-striped active' role='progressbar' aria-valuenow='{{ $option->percent }}' aria-valuemin='0' aria-valuemax='100' style='width: {{ $option->percent }}%'>
                     <span class='sr-only'>{{ $option->percent }}% Completado</span>
