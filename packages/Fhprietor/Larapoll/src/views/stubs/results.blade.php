@@ -36,7 +36,7 @@
 @else
     <h3>{{ $question }}</h3>
     <h4>Votantes nominales: {{ $users }}</h4>
-    <h4>Total participación: {{ $total }}</h4>
+    <h4>Total participación (% Coeficientes): {{ $total }}</h4>
     @if($quorum>0)
       <h4>Porcentaje participación: {{ round($total / $quorum,4) * 100 }}%</h4>
       <h4>Abstenciones: {{ $quorum-$total }}</h4>
