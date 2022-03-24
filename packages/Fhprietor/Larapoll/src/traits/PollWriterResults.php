@@ -39,8 +39,8 @@ trait PollWriterResults
         else {
             $options = collect($results)->map(function ($result) use ($total) {
                 return (object)[
-                    'votes' => $result['votes']*100,
-                    'percent' => $total === 0 ? 0 : round(($result['votes'] / $total) * 100,4),
+                    'votes' => $result['votes']/10000,
+                    'percent' => $total === 0 ? 0 : round(($result['votes']/10000 / $total),4),
                     'name' => $result['option']->name,
                 ];
             })->sortByDesc('votes');
